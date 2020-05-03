@@ -8,17 +8,17 @@ router.get('/t&c', (req, res) => {
 
 //route for privacy policies
 router.get('/privacy', (req, res) => {
-    res.render('Privacy');
+    res.render('Privacy&policies');
 });
 
 //route for the services
 router.get('/contact', (req, res) => {
-    res.send('contact');
+    res.render('contact');
 });
 
 //router for the team
 router.get('/about', (req, res) => {
-    res.send('about');
+    res.render('about');
 });
 
 //we export the router to the server
