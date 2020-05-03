@@ -8,7 +8,7 @@ router.get('/t&c', (req, res) => {
 
 //route for privacy policies
 router.get('/privacy', (req, res) => {
-    res.render('Privacy&policies');
+    res.render('privacy&policies');
 });
 
 //route for the services
