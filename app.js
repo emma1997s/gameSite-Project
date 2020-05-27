@@ -11,6 +11,9 @@ const app = express();
 app.set('view engine', 'ejs');
 app.use(ejsLayouts);
 
+//set the express static middleware for the folder
+app.use('/public', express.static('public'));
+
 //Bring in the home route
 app.use('/', require('./routes/welc'));
 
